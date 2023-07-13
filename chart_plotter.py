@@ -44,3 +44,6 @@ def plot_chart(
     plt.grid(True, linestyle="--", alpha=0.6)
 
     plt.show()
+
+    # save the plot as a PNG image file with ylabel name
+    plt.savefig(f"{ylabel.replace('/','')}.png")
